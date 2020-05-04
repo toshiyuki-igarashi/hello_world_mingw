@@ -38,6 +38,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo compile main.c
+        gcc --version
         gcc main.c
-        a.exe
+        ls .
+        .\a.exe
       shell: bash
