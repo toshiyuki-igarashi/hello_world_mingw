@@ -46,6 +46,7 @@ jobs:
     # Runs a compiled program
     - name: Run a compiled program
       run: |
+        $PATH = "/mingw32/bin:/usr/local/bin:/usr/bin:/bin:$PATH"
         echo $PATH
         ls .
         # a.exe
