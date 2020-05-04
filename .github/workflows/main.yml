@@ -46,7 +46,7 @@ jobs:
     # Runs a compiled program
     - name: Run a compiled program
       run: |
-        $env:Path = "$pwd;$env:Path"
+        echo $Path
         ls .
-        a.exe
+        # a.exe
       shell: bash
