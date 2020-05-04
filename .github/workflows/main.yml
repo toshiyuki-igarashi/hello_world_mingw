@@ -41,5 +41,11 @@ jobs:
         gcc --version
         gcc main.c
         ls .
-        .\a.exe
+      shell: bash
+      
+    # Runs a compiled program
+    - name: Run a compiled program
+      run: |
+        ls .
+        a.exe
       shell: bash
