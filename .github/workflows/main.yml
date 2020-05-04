@@ -39,5 +39,5 @@ jobs:
       run: |
         echo compile main.c
         gcc main.c
-        ls .
+        a.exe
       shell: bash
