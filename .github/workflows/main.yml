@@ -40,7 +40,9 @@ jobs:
         echo ---
         ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/include
         echo ---
-        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/lib/gcc/x86_64-w64-mingw32
+        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/x86_64-w64-mingw32
+        echo ---
+        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0
         echo ---
         echo compile main.c
         gcc -v main.c
