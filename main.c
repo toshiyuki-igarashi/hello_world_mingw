@@ -18,6 +18,11 @@ main.c:14:34: note: each undeclared identifier is reported only once for each fu
 
 int main(void){
   printf("Hello World!\n");
-/*  printf("_POSIX_C_SOURCE:%x\n", _POSIX_C_SOURCE);*/
+#if !defined(_POSIX_C_SOURCE)
+  printf("_POSIX_C_SOURCE is not defined.\n");
+#else
+  printf("_POSIX_C_SOURCE:%x\n", _POSIX_C_SOURCE);
+#endif
+
   return 0;
 }
