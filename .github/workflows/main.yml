@@ -49,5 +49,5 @@ jobs:
         export PATH=".:/bin:$PATH"
         echo $PATH
         ls .
-        # a.exe
+        a.exe
       shell: bash
