@@ -31,7 +31,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      run: echo find / -name time.h
+      run: find /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64 -name time.h
       shell: bash
 
     # Runs a set of commands using the runners shell
