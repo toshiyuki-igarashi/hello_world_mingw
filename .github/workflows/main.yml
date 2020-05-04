@@ -46,7 +46,7 @@ jobs:
     # Runs a compiled program
     - name: Run a compiled program
       run: |
-        echo $Path
+        echo $PATH
         ls .
         # a.exe
       shell: bash
