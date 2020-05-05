@@ -38,11 +38,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo ---
-        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/x86_64-w64-mingw32/include
-        echo ---
-        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include
-        echo ---
-        ls /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed
+        cat /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/x86_64-w64-mingw32/include/time.h
         echo ---
         echo compile main.c
         gcc -v main.c
