@@ -38,6 +38,8 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo build main.c
+        export PATH=".:/bin:$PATH"
+        echo $PATH
         autoreconf
         configure
         make
@@ -47,7 +49,6 @@ jobs:
     # Runs a compiled program
     - name: Run a compiled program
       run: |
-        export PATH=".:/bin:$PATH"
         echo $PATH
         ls .
         #a.exe
