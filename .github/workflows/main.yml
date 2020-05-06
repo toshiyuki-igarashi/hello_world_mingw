@@ -40,8 +40,8 @@ jobs:
         echo build main.c
         export PATH=".:/bin:$PATH"
         echo $PATH
-        autoconf
-        bash configure
+        sh -c "autoreconf -fi"
+        sh -c "configure"
         make
         ls .
       shell: bash
