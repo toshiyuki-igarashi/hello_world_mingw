@@ -37,11 +37,9 @@ jobs:
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
       run: |
-        echo ---
-        ls -l /c/ProgramData/Chocolatey/lib/mingw/tools/install/mingw64/x86_64-w64-mingw32/include/time.h
-        echo ---
-        echo compile main.c
-        gcc -v main.c
+        echo build main.c
+        configure
+        make
         ls .
       shell: bash
       
@@ -51,5 +49,5 @@ jobs:
         export PATH=".:/bin:$PATH"
         echo $PATH
         ls .
-        a.exe
+        #a.exe
       shell: bash
