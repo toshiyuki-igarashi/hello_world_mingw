@@ -38,6 +38,7 @@ jobs:
     - name: Run a multi-line script
       run: |
         echo build main.c
+        autoreconf
         configure
         make
         ls .
