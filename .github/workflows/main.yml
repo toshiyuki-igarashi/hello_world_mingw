@@ -42,6 +42,7 @@ jobs:
         echo build main.c
         export PATH=".:/bin:$PATH"
         echo $PATH
+        pacman -Ql autoconf
         ls /usr/bin
         sh -c "/usr/bin/autoreconf -fi"
         sh -c "./configure"
