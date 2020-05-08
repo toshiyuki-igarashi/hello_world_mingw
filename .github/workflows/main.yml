@@ -33,6 +33,8 @@ jobs:
     - uses: numworks/setup-msys2@v1
     - run: msys2do uname -a
     - run: msys2do pacman --noconfirm -S automake autoconf 
+    - run: msys2do pacman --noconfirm -S base-devel
+    - run: msys2do pacman --noconfirm -S mingw-w64-x86_64-toolchain
     - run: msys2do pacman -Ql automake autoconf
     - run: msys2do ls -l /usr/bin
     - run: msys2do autoreconf -fi
