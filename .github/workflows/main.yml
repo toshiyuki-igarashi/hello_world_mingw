@@ -29,6 +29,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
+    # check installed packages
+    - run: pacman -Ql
+      
     # setup msys2 for install autotools
     - uses: numworks/setup-msys2@v1
     - run: msys2do uname -a
